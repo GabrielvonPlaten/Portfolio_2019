@@ -1,0 +1,61 @@
+@import 'style/base.sass'
+
+.workBox-link
+  text-decoration: none
+
+.side-borders
+  z-index: -10
+  height: 100rem
+  position: absolute
+  bottom: -175%
+  left: 30%
+  border:
+    right: $border
+    left: $border
+  width: 40%
+  margin: 0 auto
+
+.workBox
+  height: 37rem
+  width: 50%
+  margin: 7rem auto 3rem auto
+  overflow: hidden
+  background-size: cover
+  box-shadow: 0px 0px 40px 0px rgba(20,25,15, .6)
+
+.darkenBackground
+  height: 37rem
+  width: 50%
+  position: absolute
+  opacity: 0.5
+  z-index: 2
+  background-color: #032550
+  transition: all 0.3s
+  &:hover
+    opacity: 0
+
+.work-title
+  position: relative
+  top: 610px
+  height: 6.5rem
+  background: #042d5e
+  margin: 0
+  padding: 15px
+  z-index: 10
+  box-shadow: 0px -5px 10px -4px rgba(20,25,15, 1)
+  transition: all 0.4s
+  transition-timing-function: cubic-bezier(.32,.39,.19,.99)
+  
+  h3
+    font-size: 2rem
+    margin: 0
+    color: $white-0
+  
+  p
+    color: $white-2
+
+.workBox:hover .work-title
+  top: 465px
+
+.workBox:hover .darkenBackground
+  opacity: 0
