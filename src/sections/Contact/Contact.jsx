@@ -3,8 +3,8 @@ import './Contact.sass';
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Mail from '../../assets/Skills/mail.svg';
+import Links from '../../assets/Skills/links.svg';
 import Location from '../../assets/Skills/location.svg';
-import HTML from '../../assets/Skills/links.svg';
 import PaperPlane from '../../assets/Skills/paper-plane.svg';
 
 const Contact = () => {
@@ -21,13 +21,13 @@ const Contact = () => {
             <img src={Mail} alt="Mail" />
             <a href="mailto:gabrielvonplaten@gmail.com">Gabrielvonplaten@gmail.com</a>
           </h3>
-          <h3>
+          <h3 className="text-position-middle-fix">
             <FontAwesomeIcon icon={faGlobe} className="linkIcon"/>
-            <div className="text-position-middle-fix">
+            {/* <div className="text-position-middle-fix"> */}
               <a href="https://github.com/GabrielvonPlaten">GitHub</a>
-              <span className="hyphen-separation"> - </span>
+              <span className="hyphen-separation">  </span>
               <a href="https://www.linkedin.com/in/gabriel-von-platen-9a89ab12a/">LinkedIn</a>
-            </div>
+            {/* </div> */}
           </h3>
           <h3>
             <img src={Location} alt="Location" />
