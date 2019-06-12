@@ -1,4 +1,4 @@
-import React, { Component, useEffect  } from 'react';
+import React, { useEffect  } from 'react';
 import AppRoute from 'routes/routes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
