@@ -11,7 +11,7 @@ import {
 const Contact = () => {
   return (
     <div className="contact-section">
-      <h2>Contact Me</h2>
+      <h2 className="section-title">Contact Me</h2>
       <div className="contact-container">
         <div className="container-description">
           <p>Hit me up if you want to talk about your next idea, question, or if you want to chat!</p>
@@ -23,7 +23,7 @@ const Contact = () => {
             <FontAwesomeIcon icon={faMailBulk} className="linkIcon"/>
             <a href="mailto:gabrielvonplaten@gmail.com">Gabrielvonplaten@gmail.com</a>
           </h3>
-          <h3>
+          <h3 className="text-position-middle-fix">
             <FontAwesomeIcon icon={faGlobe} className="linkIcon"/>
             <a href="https://github.com/GabrielvonPlaten">GitHub</a>
             <span className="hyphen-separation">  </span>

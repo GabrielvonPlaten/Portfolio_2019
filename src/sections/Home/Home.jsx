@@ -11,13 +11,13 @@ const Home = () => {
       <div className="title-links">
         <ul>
           <li>
-            <a href="#work" target="_blank">Work</a>
+            <a className="btn btn--blue" href="#work" target="_blank">Work</a>
           </li>
           <li>
-            <a href="#about" target="_blank">About</a>
+            <a className="btn btn--blue" href="#about" target="_blank">About</a>
           </li>
           <li>
-            <a href="#contact" target="_blank">Contact</a>
+            <a className="btn btn--blue" href="#contact" target="_blank">Contact</a>
           </li>
         </ul>
       </div>
