@@ -1,24 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import './WorkBox.sass';
 
-const WorkBox = () => {
-  let bgImage = 'https://i.imgur.com/zJwMX0U.jpg'
-
+const WorkBox = ({ workData }) => {
   return (
     <div>
       <div className="side-borders"></div>
-      <Link to="/work/id/slug" className="workBox-link">
+      <div className="workBox-link">
         <div
-          style={{backgroundImage: 'url(' + bgImage + ')'}} 
+          style={{backgroundImage: 'url(' + workData.thumbnailURL + ')'}} 
           className="workBox">
           <div className="darkenBackground"></div>
-          <div className="work-title">
-            <h3>Work Title</h3>
-            <p>This is the subtitle</p>
+          <div className="work-header">
+            <h3 className="work__title">{workData.title}</h3>
+            <ul className="technologies-list">
+              {workData.technologies.map((tech, index) => (
+                <li
+                  className="technology__item" 
+                  key={index}><span>{tech}</span></li>
+              ))}
+            </ul>
+            <p>{workData.subtitle}</p>
+            <ul className="workBox-list">
+              {workData.links.map((link, index) => (
+                <li className="workBox__item" key={index}>
+                  <a
+                    className="website__links" 
+                    href={link.site} target="_blank">{link.type}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   )
 }
