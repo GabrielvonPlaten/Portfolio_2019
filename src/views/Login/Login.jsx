@@ -28,8 +28,10 @@ const Login = ({ login, isAuthenticated }) => {
   return (
     <div className="login">
       <div className="login-container">
-        <form onSubmit={loginHandle}>
-          <h2>Admin Login</h2>
+        <form 
+          className="login-form" 
+          onSubmit={loginHandle}>
+          <h2 className="login-title">Admin Login</h2>
           <div className="form-division">
             <label>Email</label><br />
             <input name="email" onChange={e => onChange(e)} type="text"></input>
