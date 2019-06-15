@@ -9,9 +9,9 @@
   position: absolute
   bottom: -175%
   left: 30%
-  // border:
-  //   right: $border
-  //   left: $border
+  border:
+    right: $border
+    left: $border
   width: 40%
   margin: 0 auto
 
@@ -26,19 +26,19 @@
 
 .darkenBackground
   height: 38rem
-  width: 50%
-  position: absolute
+  width: 100%
+  position: relative
+  bottom: 0
   opacity: 0.5
   z-index: 2
   background-color: #032550
-  transition: all 0.3s
-  &:hover
-    opacity: 0
+  transition: all 0.7s
+  transition-timing-function: cubic-bezier(.29,.56,.2,.85)
 
 .work-header
   position: relative
-  top: 670px
-  height: 6.5rem
+  bottom: -10px
+  height: 7.4rem
   background: #042d5e
   margin: 0
   padding: 15px
@@ -57,17 +57,17 @@
     width: 60%
 
 .workBox:hover .work-header
-  top: 475px
+  bottom: 147px
 
 .workBox:hover .darkenBackground
-  opacity: 0
+  bottom: 620px
 
 .technologies-list
   display: flex
   list-style: none
-  color: #bffff5
+  color: #ff8448
   padding: 0
-  margin: 0
+  margin-top: 0.5rem
 
   .technology__item
     padding-right: 1rem

@@ -2,9 +2,9 @@ import React from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import Sections from 'sections';
-import Login from '../views/Login/Login';
-import Profile from '../views/Profile/Profile';
+import Sections from '../components/sections';
+import Login from '../components/auth/Login/Login';
+import Profile from '../components/auth/Profile/Profile';
 
 const PrivateRoute = ({ component: Component, isAuthenticated, ...rest}) => (
   <Route {...rest} render={props => (

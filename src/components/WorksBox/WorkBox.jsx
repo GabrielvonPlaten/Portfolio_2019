@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import React from 'react';
 import './WorkBox.sass';
 
 const WorkBox = ({ workData }) => {
@@ -25,7 +24,8 @@ const WorkBox = ({ workData }) => {
               {workData.links.map((link, index) => (
                 <li className="workBox__item" key={index}>
                   <a
-                    className="website__links" 
+                    className="website__links"
+                    rel="noopener noreferrer"
                     href={link.site} target="_blank">{link.type}</a>
                 </li>
               ))}
