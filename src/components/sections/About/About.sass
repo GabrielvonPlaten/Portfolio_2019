@@ -2,11 +2,10 @@
 
 .about-section
   +section-border
-  margin-bottom: 4rem
-  background: url('../../assets/about-bg.svg')
+  margin-bottom: 2rem
+  background: url('../../../assets/about-bg.svg')
   background-position: top
   background-size: cover
-  background-repeat: no-repeat
 
 .about-container
   padding: 0
@@ -24,13 +23,16 @@
   grid-template-columns: repeat(2, 1fr)
   padding: 0
 
-  .list__item
-    border-radius: 3px
+  .repo__item
+    border: $border
+    border-radius: 4px
     padding: 0.2rem 0.5rem 0.8rem 0.5rem
-    box-shadow: 0px 0px 7px 0px rgba(20,25,15, .3)
     list-style: none
     margin: 0 1rem 1rem 1rem
     background: $white-1
+    transition: all 0.4s
+    &:hover
+      box-shadow: 0px 0px 6px 0px rgba(15,20,12, .25)
 
     a
       color: $title-1
@@ -41,4 +43,8 @@
     .item__link
       width: 24px
       float: left
+
+    .language-name
+      color: $title-1
+      font-weight: 600
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './About.sass';
-import apiService from '../../api/apiService';
+import apiService from '../../../api/apiService';
 
-import GitHub from '../../assets/Skills/github.svg';
+import GitHub from '../../../assets/Skills/github.svg';
 
 // Components
 import Skills from '../Skills/Skills';
@@ -30,12 +30,16 @@ const About = () => {
           <h2>Recent GitHub Activity</h2>
           <ul className="github-repos-list">
             {gitData.map((repo, index) => (
-              <li className="list__item" key={index}>
+              <li className="repo__item" key={index}>
                 <h2>{repo.name.replace(/_|-/gi, ' ')}</h2>
                 <p>{repo.description}</p>
                 <a href={"https://github.com/GabrielvonPlaten/" + repo.name} rel="noopener noreferrer" target="_blank">
-                  <img className="item__link" src={GitHub} />
+                  <img 
+                    className="item__link" 
+                    src={GitHub} 
+                    alt="Github Link"/>
                 </a>
+                <span className="language-name">{repo.language}</span>
             </li> 
             ))}
           </ul>

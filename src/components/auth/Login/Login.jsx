@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import './Login.sass';
 
 // Actions
-import { login } from '../../redux/actions/authActions';
+import { login } from '../../../redux/actions/authActions';
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
