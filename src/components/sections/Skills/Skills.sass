@@ -1,0 +1,47 @@
+@import 'style/base.sass'
+
+.skills-section-title
+  text-align: center
+
+.skills-grid
+  margin: 1rem 2rem
+
+
+.skills-container
+  width: 97%
+  border: $border
+  border-radius: 4px
+  margin: 1rem auto
+  background: $white-1
+  transition: all 0.4s
+  &:hover
+    box-shadow: 0px 0px 6px 0px rgba(15,20,12, .25)
+
+
+
+  h3
+    color: $black-1
+    text-align: center
+    font-size: 1.2rem
+
+.technology-list
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+  margin: 0
+  padding: 0
+  width: 100%
+
+  .technology__item
+    margin: 0.8rem auto
+    list-style: none
+
+  .technology__text
+    margin: 0
+    text-align: center
+    font-size: 0.8rem
+    color: $title-1
+    font-weight: 600
+
+  .technology__img
+    height: 40px
+    width: 70px 

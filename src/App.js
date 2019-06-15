@@ -1,20 +1,25 @@
-import React, { Component } from 'react';
-import './App.sass';
+import React, { useEffect  } from 'react';
+import AppRoute from 'routes/routes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
+
+import { loadUser } from './redux/actions/authActions';
+import { Provider } from 'react-redux';
+import store from './store';
 
 library.add(faAddressBook)
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h2>Hello</h2>
-      </div>
-    );
-  }
+const App = () => {
+  useEffect(() => {
+    store.dispatch(loadUser())
+  }, []);
+
+  return (
+    <Provider store={store}>
+      <AppRoute />
+    </Provider>
+  );
 }
 
 export default App;

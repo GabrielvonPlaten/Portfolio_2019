@@ -1,0 +1,90 @@
+@import 'style/base.sass'
+
+.workBox-link
+  text-decoration: none
+
+.side-borders
+  z-index: -10
+  height: 100rem
+  position: absolute
+  bottom: -175%
+  left: 30%
+  border:
+    right: $border
+    left: $border
+  width: 40%
+  margin: 0 auto
+
+.workBox
+  height: 38rem
+  width: 50%
+  margin: 7rem auto 3rem auto
+  overflow: hidden
+  background-size: cover
+  background-repeat: no-repeat
+  box-shadow: 0px 0px 40px 0px rgba(20,25,15, .6)
+
+.darkenBackground
+  height: 38rem
+  width: 100%
+  position: relative
+  bottom: 0
+  opacity: 0.5
+  z-index: 2
+  background-color: #032550
+  transition: all 0.7s
+  transition-timing-function: cubic-bezier(.29,.56,.2,.85)
+
+.work-header
+  position: relative
+  bottom: -10px
+  height: 7.4rem
+  background: #042d5e
+  margin: 0
+  padding: 15px
+  z-index: 10
+  box-shadow: 0px -5px 10px -4px rgba(20,25,15, 1)
+  transition: all 0.4s
+  transition-timing-function: cubic-bezier(.32,.39,.19,.99)
+  
+  .work__title
+    font-size: 2rem
+    margin: 0
+    color: $white-0
+
+  p
+    color: $white-2
+    width: 60%
+
+.workBox:hover .work-header
+  bottom: 147px
+
+.workBox:hover .darkenBackground
+  bottom: 620px
+
+.technologies-list
+  display: flex
+  list-style: none
+  color: #ff8448
+  padding: 0
+  margin-top: 0.5rem
+
+  .technology__item
+    padding-right: 1rem
+
+
+.workBox-list
+  bottom: 3.7rem
+  display: flex
+  position: relative
+  float: right
+  font-size: 1.2rem
+  list-style: none
+  z-index: 20
+
+  .workBox__item
+    margin: 0 1rem
+
+  .website__links
+    color: $white-1
+    font-weight: bold
