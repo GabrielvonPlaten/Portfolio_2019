@@ -10,13 +10,6 @@ import Skills from '../Skills/Skills';
 const About = () => {
   const [gitData, setData] = useState([]);
 
-  const langs = [
-    { id: 0, name: "JavaScript"},
-    { id: 1, name: "Vue"},
-    { id: 2, name: "HTML"},
-    { id: 3, name: "C#"},
-  ]
-
   useEffect(() => {
     apiService.getRepos()
       .then(res => {

@@ -11,10 +11,10 @@ const Home = () => {
       <div className="title-links">
         <ul>
           <li>
-            <a className="btn btn--blue" href="https://github.com/GabrielvonPlaten" target="_blank">GitHub</a>
+            <a className="btn btn--blue" href="https://github.com/GabrielvonPlaten" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
           <li>
-            <a className="btn btn--blue" href="https://www.linkedin.com/in/gabriel-von-platen-9a89ab12a/" target="_blank">LinkedIn</a>
+            <a className="btn btn--blue" href="https://www.linkedin.com/in/gabriel-von-platen-9a89ab12a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </li>
         </ul>
       </div>
