@@ -4,7 +4,6 @@ import './WorkBox.sass';
 const WorkBox = ({ workData }) => {
   return (
     <div>
-      <div className="side-borders"></div>
       <div className="workBox-link">
         <div
           style={{backgroundImage: 'url(' + workData.thumbnailURL + ')'}} 

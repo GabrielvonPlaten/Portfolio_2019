@@ -3,9 +3,21 @@
 .about-section
   +section-border
   margin-bottom: 2rem
-  background: url('../../../assets/about-bg.svg')
-  background-position: top
-  background-size: cover
+  background: url('../../../assets/about-bg1.svg')
+  animation-name: aboutBGAnimation
+  animation-duration: 20s
+  animation-iteration-count: infinite
+  background-position: center
+  background-size: contain
+  background-repeat: no-repeat
+
+@keyframes aboutBGAnimation
+  0% 
+    background-size: 100%
+  50% 
+    background-size: 93%
+  100%
+    background-size: 100%
 
 .about-container
   padding: 0
@@ -71,4 +83,5 @@
 @media only screen and (max-width: 672px)
   .about-container
     grid-template-columns: 1fr
+
   
