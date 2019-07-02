@@ -51,3 +51,22 @@
   a, span
     position: relative
     top: -5px
+
+// Media Queries
+@media only screen and (max-width: 1300px)
+  .contact-container
+    width: 60%
+
+@media only screen and (max-width: 860px)
+  .contact-container
+    width: 80%
+    margin: 0 auto
+    grid-template-columns: repeat(1, 1fr)
+
+  .container-description
+    p
+      font-size: 1.1rem
+
+  .contact-links
+    .linkIcon
+      font-size: 1.7rem

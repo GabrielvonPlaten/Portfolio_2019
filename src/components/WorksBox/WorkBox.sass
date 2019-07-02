@@ -17,11 +17,12 @@
 
 .workBox
   height: 38rem
-  width: 50%
+  width: 57%
   margin: 7rem auto 3rem auto
   overflow: hidden
   background-size: cover
   background-repeat: no-repeat
+  background-position: center
   box-shadow: 0px 0px 40px 0px rgba(20,25,15, .6)
 
 .darkenBackground
@@ -88,3 +89,14 @@
   .website__links
     color: $white-1
     font-weight: bold
+
+// Media Queries
+@media only screen and (max-width: 1240px)
+  .workBox-link
+    .workBox
+      width: 77%
+
+@media only screen and (max-width: 900px)
+  .workBox-link
+    .workBox
+      width: 87%

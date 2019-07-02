@@ -4,6 +4,8 @@
   padding: 0
   height: 100vh
   background: url('../../../assets/title-bg-image.svg')
+  background-size: cover
+  background-repeat: no-repeat
 
 h1
   font-size: 4rem
@@ -43,13 +45,45 @@ h3
     li
       margin: 0 1rem
 
-    // a
-    //   border-radius: 3px
-    //   border: $border-blue-0
-    //   padding: 0.4rem 1rem
-    //   font-size: 1.1rem
-    //   color: $white-0
-    //   transition: all 0.4s
-    //   text-decoration: none
-    //   letter-spacing: 1px
+// Media Queries
+@media only screen and (max-width: 1600px)
+  .title-name
+    width: 100%
+    padding-top: 18%
+
+    h1
+      font-size: 3.2rem
+
+    h3
+      font-size: 1.1rem
+
+    h1, h3
+      margin-left: 13%
+      font-weight: 300
+ 
+@media only screen and (max-width: 1240px)
+  .title-links
+    margin: 0 auto
+
+@media only screen and (max-width: 1080px)
+  .title-name
+    padding-top: 25%
+
+@media only screen and (max-width: 750px)
+  .title-name
+    padding-top: 35%
+
+    h1
+      font-size: 2.2rem
+
+    h3
+      font-size: 1rem
+
+@media only screen and (max-width: 520px)
+  .view-home
+    background: #042d5e
+    width: 100%
+
+  .title-name
+    padding-top: 45%
     

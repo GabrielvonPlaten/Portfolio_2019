@@ -6,19 +6,6 @@
 .skills-grid
   margin: 1rem 2rem
 
-
-.skills-container
-  width: 97%
-  border: $border
-  border-radius: 4px
-  margin: 1rem auto
-  background: $white-1
-  transition: all 0.4s
-  &:hover
-    box-shadow: 0px 0px 6px 0px rgba(15,20,12, .25)
-
-
-
   h3
     color: $black-1
     text-align: center
@@ -45,3 +32,16 @@
   .technology__img
     height: 40px
     width: 70px 
+
+// Media Queries
+@media only screen and (max-width: 1024px)
+  .technology-list
+    grid-template-columns: repeat(4, 1fr)
+
+@media only screen and (max-width: 850px)
+  .technology-list
+    grid-template-columns: repeat(2, 1fr)
+
+@media only screen and (max-width: 675px)
+  .technology-list
+    grid-template-columns: repeat(3, 1fr)
