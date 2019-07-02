@@ -2,8 +2,11 @@
   
 .works-section
   background: url('../../../assets/works-bg.svg')
-  background-size: cover
-  margin-bottom: 12rem
+  background-size: contain
+  padding-bottom: 7rem
+  animation-name: worksBGAnimation
+  animation-duration: 20s
+  animation-iteration-count: infinite
   +section-border
 
 .works-container__title
@@ -16,3 +19,11 @@
 @media only screen and (max-width: 1240px)
   .works-container__title
     margin: 0.8rem
+
+@keyframes worksBGAnimation
+  0% 
+    background-size: 100%
+  50% 
+    background-size: 105%
+  100%
+    background-size: 100%

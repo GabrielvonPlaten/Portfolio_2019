@@ -13,8 +13,6 @@ const Works = () => {
       .then(res => setData(res.data))
   }, [])
 
-
-
   return (
     <div className="works-section">
       <div className="works-container">

@@ -16,6 +16,9 @@ const Home = () => {
           <li>
             <a className="btn btn--blue" href="https://www.linkedin.com/in/gabriel-von-platen-9a89ab12a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </li>
+          <li>
+            <a className="btn btn--blue" href="https://www.docdroid.net/eZQ3wT3/gabrielvonplaten.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          </li>
         </ul>
       </div>
     </div>
