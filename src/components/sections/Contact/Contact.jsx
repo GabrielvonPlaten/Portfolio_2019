@@ -37,7 +37,7 @@ const Contact = () => {
           <h3>
             {/* <img src={PaperPlane} alt="Resume" /> */}
             <FontAwesomeIcon icon={faPaperPlane} className="linkIcon"/>
-            <a href="https://www.docdroid.net/eZQ3wT3/gabrielvonplaten.pdf">Resume</a>
+            <a href="https://www.docdroid.net/tP4mxuC/gabrielvonplaten.pdf">Resume</a>
           </h3>
         </div>
       </div>
