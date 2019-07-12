@@ -36,7 +36,7 @@ const Home = () => {
           <li>
             <a
               className="btn btn--blue"
-              href="https://www.docdroid.net/xIIlG6t/resume-gabriel-von-platen.pdf"
+              href="https://www.docdroid.net/J8ezboQ/resume-gabriel-von-platen.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
