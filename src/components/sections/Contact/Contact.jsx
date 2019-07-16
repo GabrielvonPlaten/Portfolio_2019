@@ -44,7 +44,11 @@ const Contact = () => {
           <h3>
             {/* <img src={PaperPlane} alt="Resume" /> */}
             <FontAwesomeIcon icon={faPaperPlane} className="linkIcon" />
-            <a href="https://www.docdroid.net/J8ezboQ/resume-gabriel-von-platen.pdf">
+            <a
+              href="https://www.docdroid.net/J8ezboQ/resume-gabriel-von-platen.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
             </a>
           </h3>
