@@ -1,21 +1,22 @@
-import React from 'react';
-import './WorkBox.sass';
+import React from "react";
+import "./WorkBox.sass";
 
 const WorkBox = ({ workData }) => {
   return (
     <div>
       <div className="workBox-link">
         <div
-          style={{backgroundImage: 'url(' + workData.thumbnailURL + ')'}} 
-          className="workBox">
-          <div className="darkenBackground"></div>
+          style={{ backgroundImage: "url(" + workData.thumbnailURL + ")" }}
+          className="workBox"
+        >
+          <div className="darkenBackground" />
           <div className="work-header">
             <h3 className="work__title">{workData.title}</h3>
             <ul className="technologies-list">
               {workData.technologies.map((tech, index) => (
-                <li
-                  className="technology__item" 
-                  key={index}><span>{tech}</span></li>
+                <li className="technology__item" key={index}>
+                  <span>{tech}</span>
+                </li>
               ))}
             </ul>
             <p>{workData.subtitle}</p>
@@ -25,7 +26,11 @@ const WorkBox = ({ workData }) => {
                   <a
                     className="website__links"
                     rel="noopener noreferrer"
-                    href={link.site} target="_blank">{link.type}</a>
+                    href={link.site}
+                    target="_blank"
+                  >
+                    {link.type}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -33,7 +38,7 @@ const WorkBox = ({ workData }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WorkBox
+export default WorkBox;
