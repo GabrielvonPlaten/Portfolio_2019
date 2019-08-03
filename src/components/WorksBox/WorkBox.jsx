@@ -1,12 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './WorkBox.sass';
 
 const WorkBox = ({ workData }) => {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.workBox-animation');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          console.log(entry.intersectionRatio);
+          if (entry.intersectionRatio) {
+            entry.target.style.animation = `workBox_animate 0.6s forwards ease-in`;
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3
+      }
+    );
+
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+  });
+
   return (
     <div>
-      <div className='workBox-link'>
+      <div className='workBox-link workBox-animation'>
         <div
-          style={{ backgroundImage: 'url(' + workData.thumbnailURL + ')' }}
+          style={{ backgroundImage: `url(${workData.thumbnailURL})` }}
           className='workBox'
         >
           <div className='darkenBackground' />

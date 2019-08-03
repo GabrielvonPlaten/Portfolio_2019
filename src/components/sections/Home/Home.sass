@@ -7,18 +7,18 @@
   background-size: cover
   background-repeat: no-repeat
 
-h1
-  font-size: 4rem
-  font-weight: 600
-  color: $title
-  margin: 0
+  h1
+    font-size: 4rem
+    font-weight: 600
+    color: $title
+    margin: 0
 
 
-h3
-  margin-top: 0.6rem
-  font-size: 1.3rem
-  font-weight: 600
-  color: $title
+  h3
+    margin-top: 0.6rem
+    font-size: 1.3rem
+    font-weight: 600
+    color: $title
 
   .role
     font-weight: 600
@@ -44,6 +44,18 @@ h3
 
     li
       margin: 0 1rem
+
+// Animations
+.animate
+  opacity: 0
+
+@keyframes text_animation
+  from
+    transform: translateX(-100px)
+    opacity: 0
+  to
+    transform: translateX(0px)
+    opacity: 1
 
 // Media Queries
 @media only screen and (max-width: 1600px)
